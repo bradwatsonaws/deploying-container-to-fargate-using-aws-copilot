@@ -134,7 +134,6 @@ This file defines how to construct a Docker container image for the application.
 You can verify that this Dockerfile builds by running:
 
 ```sh
-cd app
 docker build -t tictactoe .
 ```
 
