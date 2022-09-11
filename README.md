@@ -33,7 +33,7 @@ interstitial screen similar to this one for a minute or two:
 
 This workshop will be using an automatically created IAM role that is attached to the Cloud9 development environment, rather than the default Cloud9 temporary credentials.
 
-Now the development environment is ready to go, so we just need to open up a terminal to run commands in.
+Now the development environment is ready to go, so we just need to open up a terminal for running commands.
 
 <details>
   <summary>Press the green plus button and select "New Terminal":</summary>
