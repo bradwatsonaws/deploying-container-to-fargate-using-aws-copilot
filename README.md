@@ -226,7 +226,7 @@ Finally, Copilot asks if you want to deploy a test environment. Press `y` and th
 ![images/copilot-deploy.png](images/copilot-deploy.png)
 
 
-At this point all the major decisions have been made, and you can sit back and watch Copilot do it's work on your behalf.
+At this point all the major decisions have been made, and you can sit back and watch Copilot do its work on your behalf.
 
 First Copilot creates the environment resources. This includes all the networking resources needed to have your own private cloud networking:
 
