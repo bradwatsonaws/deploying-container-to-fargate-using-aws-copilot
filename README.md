@@ -238,6 +238,8 @@ At the end of the output you will see a URL for the deployed application.
 
 You can use this URL to test your application over the internet:
 
+![images/app-final.png](images/app-final.png)
+
 
 ## Step Six: Tear everything down
 
