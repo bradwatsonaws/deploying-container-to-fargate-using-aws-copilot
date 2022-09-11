@@ -164,10 +164,7 @@ You can now check to verify that the container is running:
 docker ps
 ```
 
-![images/docker-run-ps.png](images/docker-run-ps.png)
-
-
-Just as before, you can test the now containerized application locally in Cloud9 by clicking Preview -> Preview Running Application:
+Also, just as before, you can test the now containerized application locally in Cloud9 by clicking Preview -> Preview Running Application:
 
 ![images/app-preview-local.png](images/app-preview-docker.png)
 
