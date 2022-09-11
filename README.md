@@ -215,13 +215,9 @@ Now Copilot will search the project directory to find Dockerfile's to deploy. Ch
 ![images/copilot-docker.png](images/copilot-docker.png)
 
 
-You will see a spinner while Copilot initializes
-the application environment:
+You will see a spinner while Copilot initializes the application environment.
 
-![images/copilot-initialize.png](images/copilot-initialize.png)
-
-
-Finally, Copilot asks if you want to deploy a test environment. Press `y` and then Enter:
+And finally, Copilot asks if you want to deploy a test environment. Press `y` and then Enter:
 
 ![images/copilot-deploy.png](images/copilot-deploy.png)
 
