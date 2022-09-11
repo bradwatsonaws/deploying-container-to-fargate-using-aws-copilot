@@ -169,7 +169,7 @@ docker ps
 
 Just as before, you can test the now containerized application locally in Cloud9 by clicking Preview -> Preview Running Application:
 
-![images/app-preview-local.png](images/app-preview-local.png)
+![images/app-preview-local.png](images/app-preview-docker.png)
 
 ![images/app-preview-image.png](images/app-preview-image.png)
 
