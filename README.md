@@ -48,6 +48,7 @@ curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/cop
 chmod +x copilot
 sudo mv copilot /usr/local/bin/copilot
 copilot --help
+
 ```
 
 Next let's run a quick script to customize the AWS config inside of the development environment:
@@ -69,12 +70,14 @@ output = json
 role_arn = $(aws iam get-role --role-name test-c9-template-Admin-Access | jq -r .Role.Arn)
 credential_source = Ec2InstanceMetadata
 EOF
+
 ```
 
 Last you should clone this repo inside of the environment in order to pull in the code that will be used:
 
 ```sh
 git clone https://github.com/bradwatsonaws/deploying-container-to-fargate-using-aws-copilot.git
+
 ```
 
 
@@ -95,6 +98,7 @@ Go back to the terminal that you opened in Cloud9 and run:
 cd deploying-container-to-fargate-using-aws-copilot/
 npm install
 npm start
+
 ```
 
 You can test the application locally in Cloud9 by clicking Preview -> Preview Running Application:
@@ -127,6 +131,7 @@ RUN npm run build
 ENV NODE_ENV production
 EXPOSE 3000
 CMD [ "npx", "serve", "build" ]
+
 ```
 
 This file defines how to construct a Docker container image for the application. It uses NPM to install all package build dependencies. It then builds the application and exposes port 3000 of the container.
@@ -135,6 +140,7 @@ You can verify that this Dockerfile builds by running:
 
 ```sh
 docker build -t tictactoe .
+
 ```
 
 ![images/container-build.png](images/container-build.png)
@@ -147,6 +153,7 @@ Now that the Docker container image is built, you can run the container image on
 
 ```sh
 docker run -d -p 8080:3000 --name tictactoe tictactoe
+
 ```
 
 This command has a few components to recognize:
@@ -161,6 +168,7 @@ You can now check to verify that the container is running:
 
 ```sh
 docker ps
+
 ```
 
 Also, just as before, you can test the now containerized application locally in Cloud9 by clicking Preview -> Preview Running Application:
@@ -175,6 +183,7 @@ You can stop the container and verify it has stopped by running:
 ```sh
 docker rm -f tictactoe
 docker ps
+
 ```
 
 ![images/docker-stop.png](images/docker-stop.png)
@@ -186,6 +195,7 @@ Now that you have built and run a container in the development environment, the 
 
 ```sh
 copilot init
+
 ```
 
 Copilot will ask you what you would like to name your application. Type the name of the application like "tictactoe":
@@ -246,7 +256,9 @@ If you want to clean everything up you can go back to Cloud9 and run:
 
 ```sh
 copilot app delete
+
 ```
 
 This will delete all resources grouped under the application:
 
+![images/copilot-delete.png](images/copilot-delete.png)
