@@ -109,6 +109,7 @@ You should see a small TicTacToe game that you can test for fun:
 
 ![images/app-preview-image.png](images/app-preview-image.png)
 
+Stop the application by using CTRL+C.
 
 ## Step Three: Create a Dockerfile for the application
 
@@ -136,7 +137,7 @@ CMD [ "npx", "serve", "build" ]
 
 This file defines how to construct a Docker container image for the application. It uses NPM to install all package build dependencies. It then builds the application and exposes port 3000 of the container.
 
-You can verify that this Dockerfile builds by running:
+You can verify that this Dockerfile builds by running the following command in your terminal:
 
 ```sh
 docker build -t tictactoe .
