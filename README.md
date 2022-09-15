@@ -95,7 +95,7 @@ You can run this application locally on the Cloud9 environment even though it is
 Go back to the terminal that you opened in Cloud9 and run:
 
 ```sh
-cd deploying-container-to-fargate-using-aws-copilot/
+cd ~/environment/deploying-container-to-fargate-using-aws-copilot
 npm install
 npm start
 
@@ -140,6 +140,7 @@ This file defines how to construct a Docker container image for the application.
 You can verify that this Dockerfile builds by running the following command in your terminal:
 
 ```sh
+cd ~/environment/deploying-container-to-fargate-using-aws-copilot
 docker build -t tictactoe .
 
 ```
