@@ -115,7 +115,7 @@ You should see a small TicTacToe game that you can test for fun:
 Now that you have seen the application running, it is time to package this application up into a container image that can be run on AWS Fargate.
 
 <details>
-  <summary>Create a new file called `Dockerfile` inside of the `deploying-container-to-fargate-using-aws-copilot` folder.</summary>
+  <summary>Create a new file called `Dockerfile` inside of the `deploying-container-to-fargate-using-aws-copilot` folder. IMPORTANT: The file `Dockerfile` is case sensitive and has no extension.</summary>
 
   ![images/create-file.png](images/create-file.png)
 </details>
