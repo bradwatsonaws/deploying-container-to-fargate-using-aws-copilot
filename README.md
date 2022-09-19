@@ -163,7 +163,7 @@ This command has a few components to recognize:
 - `docker run` - What you want to happen: run a container image as a container
 - `-d` - Run the container in the background
 - `-p 8080:3000` - The application in the container is binding to port 3000. Accept traffic on the host at port 8080 and send that traffic to the container's port 3000.
-- `--name tictactoe` - Name this copy of the running container `reverse`
+- `--name tictactoe` - Name this copy of the running container `tictactoe`
 - `tictactoe` - The name of the container image to run as a container
 
 You can now check to verify that the container is running:
